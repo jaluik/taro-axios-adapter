@@ -5,7 +5,7 @@
     "noImplicitAny": false,
     "lib": ["ESNext", "DOM"],
     "outDir": "dist",
-    "module": "CommonJS",
+    "module": "ESNext",
     "moduleResolution": "node",
     "target": "ES6",
     "declaration": true,

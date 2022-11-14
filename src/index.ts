@@ -1,5 +1,5 @@
 import { AxiosAdapter } from 'axios';
-import Taro from '@tarojs/taro';
+import { request as TaroRequest } from '@tarojs/taro';
 import {
   methodProcessor,
   dataProcessor,
@@ -22,7 +22,7 @@ const TaroAdapter: AxiosAdapter = (config) => {
   } = config;
   return new Promise((resolve, reject) => {
     const request = () =>
-      Taro.request({
+      TaroRequest({
         url: urlProcessor(baseURL, url, params, paramsSerializer),
         header: headers,
         data: dataProcessor(data),
