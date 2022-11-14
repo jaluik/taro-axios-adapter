@@ -1,6 +1,6 @@
 {
   "name": "taro-axios-adapter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "git@github.com:jaluik/taro-axios-adapter.git",
@@ -15,7 +15,7 @@
   },
   "peerDependencies": {
     "@tarojs/taro": "*",
-    "axios": "*"
+    "axios": "0.x"
   },
   "devDependencies": {
     "@babel/core": "^7.13.16",
